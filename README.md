@@ -2,7 +2,7 @@
 
 This repo contains some code snippets which I use while practising problem in Java.
 
-This Repo contains various Data Structures and Algorithms written in Java (More Upcoming soon!).
+This Repo contains various Data Structures and Algorithms (More Upcoming soon!) written in Java.
 
 -------
 ### Credits
