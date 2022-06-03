@@ -2,7 +2,7 @@ package Algorithms;
 
 /**
  * Binary Exponention calculates base^exp in log(n) time
- * https://cp-algorithms.com/algebra/binary-exp.html
+ * For more infomation : https://cp-algorithms.com/algebra/binary-exp.html
  */
 public interface BinExp {
     public static long FastExp(long base, long exp) {
