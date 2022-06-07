@@ -1,4 +1,4 @@
-package Algorithms;
+
 
 /**
  *  Lower Bound returns the first index of the element if present else present the next highest index in the arrary

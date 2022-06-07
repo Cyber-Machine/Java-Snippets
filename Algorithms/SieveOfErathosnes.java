@@ -1,4 +1,3 @@
-package Algorithms;
 import java.util.ArrayList;
 public interface SieveOfErathosnes {
     static ArrayList<Integer> sieveOfEratosthenes(int n)

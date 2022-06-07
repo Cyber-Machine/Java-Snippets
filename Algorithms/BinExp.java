@@ -1,5 +1,3 @@
-package Algorithms;
-
 /**
  * Binary Exponention calculates base^exp in log(n) time
  * For more infomation : https://cp-algorithms.com/algebra/binary-exp.html
