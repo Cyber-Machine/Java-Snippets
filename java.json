@@ -11,7 +11,7 @@
 	},
 
 	"HashMap Push And Pop":{
-		"prefix": "FunMap",
+		"prefix": "MapPushPop",
 		"body": [
 			"public static void push(HashMap<Integer,Integer> map , Integer val)",
 			"{" ,
@@ -194,5 +194,35 @@
 		"\t",
 		"}"],
 		"description": "GCD by Euclidean Method"
+	},
+	"BipartiteGraph":{
+		"prefix":"isBipartiteGraph",
+		"body" : [
+			"public static boolean isBipartateGraph(ArrayList<ArrayList<Integer>> graph) {",
+			"\tArrayDeque<Integer> bfs = new ArrayDeque<>();",
+			"\tboolean [] visited = new boolean [graph.size()];",
+			"\tboolean [] color = new boolean [graph.size()];",
+			"\tfor(int node = 0 ; node<graph.size() ; node++)",
+			"\t{",
+			"\t\tif(visited[node]) continue;",
+			"\t\tbfs.add(node);",
+			"\t\twhile (!bfs.isEmpty()) {",
+			"\t\tint current = bfs.removeFirst();",
+			"\t\t\tfor(int adj : graph.get(current))",
+			"\t\t\t{",
+			"\t\t\t\tif(!visited[adj])",
+			"\t\t\t\t{",
+			"\t\t\t\t\tvisited[adj] = true;",
+			"\t\t\t\t\tcolor[adj] = !color[current];",
+			"\t\t\t\t\tbfs.add(adj);",
+			"\t\t\t\t}",
+			"\t\t\t\telse if(color[current] == color[adj]) return false;",
+			"\t\t\t}",
+			"\t\t}",
+			"\t}",
+			"\treturn true;",
+			"}"
+		],
+		"description" :"Checks if the graph is Bipartate or not"
 	}
 }
