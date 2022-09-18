@@ -12,6 +12,7 @@ Future topics to be added :
 - Tree 
 - String
 - Range Queries
+- Dynammic Programming
 
 ## Credits
 ### Websites 
